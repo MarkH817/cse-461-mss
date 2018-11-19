@@ -1,0 +1,75 @@
+warning: Android API version '28' not available, using minApkVersion '15' instead
+warning: Android API version '28' not available, using minApkVersion '15' instead
+Using '/Users/Kat1/Downloads/Covert/resources/FlowDroid/../AndroidPlatforms/android-15/android.jar' as android.jar
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.animation.Animator$AnimatorPauseListener is a phantom class!
+Warning: android.animation.StateListAnimator is a phantom class!
+Warning: android.animation.TypeConverter is a phantom class!
+Warning: android.annotation.SuppressLint is a phantom class!
+Warning: android.annotation.TargetApi is a phantom class!
+Warning: android.app.AppComponentFactory is a phantom class!
+Warning: android.app.AppOpsManager is a phantom class!
+Warning: android.app.Notification$Action$Builder is a phantom class!
+Warning: android.app.Notification$Action is a phantom class!
+Warning: android.app.RemoteInput$Builder is a phantom class!
+Warning: android.app.RemoteInput is a phantom class!
+Warning: android.view.Choreographer is a phantom class!
+Warning: android.view.Choreographer$FrameCallback is a phantom class!
+Warning: android.graphics.Outline is a phantom class!
+Warning: android.graphics.Typeface$Builder is a phantom class!
+Warning: android.graphics.drawable.AnimatedVectorDrawable is a phantom class!
+Warning: android.graphics.drawable.Icon is a phantom class!
+Warning: android.graphics.drawable.RippleDrawable is a phantom class!
+Warning: android.graphics.drawable.VectorDrawable is a phantom class!
+Warning: android.graphics.fonts.FontVariationAxis is a phantom class!
+Warning: android.icu.text.DecimalFormatSymbols is a phantom class!
+Warning: android.media.AudioAttributes is a phantom class!
+Warning: android.media.MediaDescription$Builder is a phantom class!
+Warning: android.media.MediaDescription is a phantom class!
+Warning: android.media.MediaMetadata is a phantom class!
+Warning: android.media.session.MediaController$Callback is a phantom class!
+Warning: android.media.session.MediaController$PlaybackInfo is a phantom class!
+Warning: android.media.session.MediaSession$QueueItem is a phantom class!
+Warning: android.media.session.PlaybackState$CustomAction is a phantom class!
+Warning: android.media.session.PlaybackState is a phantom class!
+Warning: android.os.CancellationSignal is a phantom class!
+Warning: android.os.LocaleList is a phantom class!
+Warning: android.os.Trace is a phantom class!
+Warning: android.service.notification.NotificationListenerService is a phantom class!
+Warning: android.service.notification.StatusBarNotification is a phantom class!
+Warning: android.view.ViewOverlay is a phantom class!
+Warning: android.view.WindowId is a phantom class!
+Warning: android.view.ViewGroupOverlay is a phantom class!
+Warning: android.text.PrecomputedText$Params is a phantom class!
+Warning: android.text.TextDirectionHeuristic is a phantom class!
+Warning: android.text.PrecomputedText is a phantom class!
+Warning: android.transition.Transition$EpicenterCallback is a phantom class!
+Warning: android.transition.Transition is a phantom class!
+Warning: android.transition.Transition$TransitionListener is a phantom class!
+Warning: android.view.accessibility.AccessibilityManager$TouchExplorationStateChangeListener is a phantom class!
+Warning: android.view.accessibility.AccessibilityNodeProvider is a phantom class!
+Warning: android.view.View$OnApplyWindowInsetsListener is a phantom class!
+Warning: android.view.WindowInsets is a phantom class!
+Warning: android.support.v4.media.AudioAttributesImpl is a phantom class!
+Warning: android.view.SearchEvent is a phantom class!
+Warning: android.view.ActionProvider$VisibilityListener is a phantom class!
+Warning: android.system.ErrnoException is a phantom class!
+Warning: android.system.Os is a phantom class!
+Warning: android.system.OsConstants is a phantom class!
+Warning: android.system.StructStat is a phantom class!
+Warning: android.text.PrecomputedText$Params$Builder is a phantom class!
+Warning: android.text.StaticLayout$Builder is a phantom class!
+Warning: android.text.TextDirectionHeuristics is a phantom class!
+Warning: android.transition.TransitionManager is a phantom class!
+Warning: android.transition.TransitionSet is a phantom class!
+Warning: android.util.LongSparseArray is a phantom class!
+Warning: android.view.ViewAnimationUtils is a phantom class!
+Warning: android.view.ViewOutlineProvider is a phantom class!
+Warning: android.view.accessibility.AccessibilityNodeInfo$CollectionInfo is a phantom class!
+Warning: android.view.accessibility.AccessibilityNodeInfo$CollectionItemInfo is a phantom class!
+Warning: android.widget.ThemedSpinnerAdapter is a phantom class!
+Warning: java.util.Objects is a phantom class!
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.3 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
