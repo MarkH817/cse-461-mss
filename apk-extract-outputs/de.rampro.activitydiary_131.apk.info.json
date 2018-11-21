@@ -1,0 +1,283 @@
+{
+  "versionCode": 131,
+  "versionName": "1.3.1",
+  "package": "de.rampro.activitydiary",
+  "usesPermissions": [
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "required": false
+    },
+    {
+      "name": "android.permission.ACCESS_FINE_LOCATION",
+      "required": false
+    },
+    {
+      "name": "android.permission.ACCESS_WIFI_STATE",
+      "required": false
+    },
+    {
+      "name": "android.permission.ACCESS_NETWORK_STATE",
+      "required": false
+    },
+    {
+      "name": "android.permission.INTERNET",
+      "required": false
+    },
+    {
+      "name": "android.permission.WAKE_LOCK",
+      "maxSdkVersion": 25
+    }
+  ],
+  "permissions": [],
+  "permissionTrees": [],
+  "permissionGroups": [],
+  "instrumentation": null,
+  "usesSdk": {
+    "minSdkVersion": 21,
+    "targetSdkVersion": 27
+  },
+  "usesConfiguration": null,
+  "usesFeatures": [
+    {
+      "name": "android.hardware.camera",
+      "required": false
+    },
+    {
+      "name": "android.hardware.location.gps",
+      "required": false
+    },
+    {
+      "name": "android.hardware.location.network",
+      "required": false
+    },
+    {
+      "name": "android.hardware.telephony",
+      "required": false
+    },
+    {
+      "name": "android.hardware.wifi",
+      "required": false
+    }
+  ],
+  "supportsScreens": {
+    "anyDensity": true,
+    "normalScreens": true,
+    "largeScreens": true
+  },
+  "compatibleScreens": [],
+  "supportsGlTextures": [],
+  "application": {
+    "theme": "resourceId:0x7f100006",
+    "label": "resourceId:0x7f0f0040",
+    "icon": "resourceId:0x7f0d0001",
+    "name": "de.rampro.activitydiary.ActivityDiaryApplication",
+    "allowBackup": true,
+    "installLocation": 0,
+    "largeHeap": true,
+    "supportsRtl": true,
+    "roundIcon": "resourceId:0x7f0d0003",
+    "activities": [
+      {
+        "name": "de.rampro.activitydiary.ui.main.MainActivity",
+        "launchMode": 1,
+        "windowSoftInputMode": 32,
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.MAIN"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.LAUNCHER"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0f0037",
+        "name": "de.rampro.activitydiary.ui.generic.EditActivity",
+        "windowSoftInputMode": 4,
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0f003a",
+        "name": "de.rampro.activitydiary.ui.generic.ManageActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0f0039",
+        "name": "de.rampro.activitydiary.ui.history.HistoryDetailActivity",
+        "windowSoftInputMode": 32,
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0f0038",
+        "name": "de.rampro.activitydiary.ui.history.HistoryActivity",
+        "launchMode": 1,
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.SEARCH"
+              },
+              {
+                "name": ".action.SEARCH_ACTIVITY"
+              },
+              {
+                "name": ".action.SEARCH_NOTE"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": [
+          {
+            "name": "android.app.searchable",
+            "resource": "resourceId:0x7f120002"
+          }
+        ]
+      },
+      {
+        "label": "resourceId:0x7f0f0035",
+        "name": "de.rampro.activitydiary.ui.generic.AboutActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0f003d",
+        "name": "de.rampro.activitydiary.ui.settings.SettingsActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0f003b",
+        "name": "de.rampro.activitydiary.ui.location.MapActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0f003e",
+        "name": "de.rampro.activitydiary.ui.statistics.StatisticsActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "theme": "resourceId:0x103000b",
+        "name": "org.acra.dialog.CrashReportDialog",
+        "process": ":acra",
+        "finishOnTaskLaunch": true,
+        "excludeFromRecents": true,
+        "launchMode": 3,
+        "intentFilters": [],
+        "metaData": []
+      }
+    ],
+    "activityAliases": [],
+    "launcherActivities": [
+      {
+        "name": "de.rampro.activitydiary.ui.main.MainActivity",
+        "launchMode": 1,
+        "windowSoftInputMode": 32,
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.MAIN"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.LAUNCHER"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      }
+    ],
+    "services": [
+      {
+        "name": "de.rampro.activitydiary.helpers.RefreshService",
+        "permission": "android.permission.BIND_JOB_SERVICE",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "name": "org.acra.sender.SenderService",
+        "permission": "android.permission.BIND_JOB_SERVICE",
+        "exported": false,
+        "process": ":acra",
+        "intentFilters": [],
+        "metaData": []
+      }
+    ],
+    "receivers": [],
+    "providers": [
+      {
+        "label": "ActivityDiaryProvider",
+        "icon": "resourceId:0x7f0d0001",
+        "name": "de.rampro.activitydiary.db.ActivityDiaryContentProvider",
+        "readPermission": "de.rampro.activitydiary.READ",
+        "writePermission": "de.rampro.activitydiary.WRITE",
+        "exported": false,
+        "multiprocess": true,
+        "authorities": "de.rampro.activitydiary.provider",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      },
+      {
+        "name": "de.rampro.activitydiary.search.ActivityDiarySuggestionProvider",
+        "authorities": "de.rampro.activitydiary.search.ActivityDiarySuggestionProvider",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      },
+      {
+        "name": "android.support.v4.content.FileProvider",
+        "exported": false,
+        "authorities": "de.rampro.activitydiary.fileprovider",
+        "grantUriPermissions": [],
+        "metaData": [
+          {
+            "name": "android.support.FILE_PROVIDER_PATHS",
+            "resource": "resourceId:0x7f120001"
+          }
+        ],
+        "pathPermissions": []
+      },
+      {
+        "name": "com.squareup.picasso.PicassoProvider",
+        "exported": false,
+        "authorities": "de.rampro.activitydiary.com.squareup.picasso",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      },
+      {
+        "name": "org.acra.attachment.AcraContentProvider",
+        "exported": false,
+        "process": ":acra",
+        "authorities": "de.rampro.activitydiary.acra",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      }
+    ],
+    "usesLibraries": []
+  }
+}

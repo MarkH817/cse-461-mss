@@ -1,0 +1,334 @@
+{
+  "versionCode": 1560,
+  "versionName": "1.5.6",
+  "installLocation": 0,
+  "package": "com.veniosg.dir",
+  "usesPermissions": [
+    {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+    },
+    {
+      "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+    },
+    {
+      "name": "com.android.launcher.permission.INSTALL_SHORTCUT"
+    }
+  ],
+  "permissions": [],
+  "permissionTrees": [],
+  "permissionGroups": [],
+  "instrumentation": null,
+  "usesSdk": {
+    "minSdkVersion": 21,
+    "targetSdkVersion": 27
+  },
+  "usesConfiguration": null,
+  "usesFeatures": [],
+  "supportsScreens": null,
+  "compatibleScreens": [],
+  "supportsGlTextures": [],
+  "application": {
+    "theme": "resourceId:0x7f0f0117",
+    "label": "resourceId:0x7f0e0022",
+    "icon": "resourceId:0x7f0c0000",
+    "name": "com.veniosg.dir.android.FileManagerApplication",
+    "allowBackup": true,
+    "hardwareAccelerated": true,
+    "fullBackupContent": true,
+    "activities": [
+      {
+        "name": "com.veniosg.dir.android.activity.FileManagerActivity",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.VIEW"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": [
+              {
+                "scheme": "file"
+              }
+            ]
+          }
+        ],
+        "metaData": []
+      },
+      {
+        "theme": "resourceId:0x7f0f0118",
+        "name": "com.veniosg.dir.android.activity.SafPromptActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0e009c",
+        "name": "com.veniosg.dir.android.activity.PreferenceActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "label": "resourceId:0x7f0e001d",
+        "name": "com.veniosg.dir.android.activity.AboutActivity",
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "name": "com.veniosg.dir.android.activity.SearchActivity",
+        "exported": false,
+        "launchMode": 1,
+        "windowSoftInputMode": 16,
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.SEARCH"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      },
+      {
+        "name": "com.veniosg.dir.android.activity.IntentFilterActivity",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "org.openintents.action.PICK_FILE"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": [
+              {
+                "scheme": "file"
+              },
+              {
+                "mimeType": "*/*"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "name": "org.openintents.action.PICK_FILE"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": [
+              {
+                "scheme": "file"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "name": "org.openintents.action.PICK_FILE"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": []
+          },
+          {
+            "actions": [
+              {
+                "name": "org.openintents.action.PICK_DIRECTORY"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": [
+              {
+                "scheme": "file"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "name": "org.openintents.action.PICK_DIRECTORY"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              }
+            ],
+            "data": []
+          },
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.GET_CONTENT"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              },
+              {
+                "name": "android.intent.category.OPENABLE"
+              }
+            ],
+            "data": [
+              {
+                "mimeType": "*/*"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.GET_CONTENT"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              },
+              {
+                "name": "android.intent.category.OPENABLE"
+              }
+            ],
+            "data": [
+              {
+                "scheme": "file"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.GET_CONTENT"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.DEFAULT"
+              },
+              {
+                "name": "android.intent.category.OPENABLE"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      }
+    ],
+    "activityAliases": [
+      {
+        "name": "com.veniosg.dir.activity.FileManagerActivity",
+        "targetActivity": "com.veniosg.dir.android.activity.FileManagerActivity",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.MAIN"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.LAUNCHER"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      }
+    ],
+    "launcherActivities": [
+      {
+        "name": "com.veniosg.dir.activity.FileManagerActivity",
+        "targetActivity": "com.veniosg.dir.android.activity.FileManagerActivity",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.MAIN"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.LAUNCHER"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      }
+    ],
+    "services": [
+      {
+        "name": "com.veniosg.dir.android.service.CopyService",
+        "exported": false,
+        "intentFilters": [],
+        "metaData": []
+      },
+      {
+        "name": "com.veniosg.dir.android.service.ZipService",
+        "exported": false,
+        "intentFilters": [],
+        "metaData": []
+      }
+    ],
+    "receivers": [],
+    "providers": [
+      {
+        "name": "com.veniosg.dir.android.provider.BookmarkProvider",
+        "exported": false,
+        "authorities": "com.veniosg.dir.bookmarks",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      },
+      {
+        "name": "com.veniosg.dir.android.provider.FileManagerProvider",
+        "permission": "android.permission.READ_EXTERNAL_STORAGE",
+        "exported": true,
+        "authorities": "com.veniosg.dir.filemanager",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      },
+      {
+        "name": "android.arch.lifecycle.ProcessLifecycleOwnerInitializer",
+        "exported": false,
+        "multiprocess": true,
+        "authorities": "com.veniosg.dir.lifecycle-trojan",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      }
+    ],
+    "usesLibraries": []
+  }
+}

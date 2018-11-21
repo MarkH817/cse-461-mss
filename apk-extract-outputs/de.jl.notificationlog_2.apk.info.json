@@ -1,0 +1,153 @@
+{
+  "versionCode": 2,
+  "versionName": "1.1",
+  "compileSdkVersion": 28,
+  "compileSdkVersionCodename": "9",
+  "package": "de.jl.notificationlog",
+  "platformBuildVersionCode": 2,
+  "platformBuildVersionName": 1066192077,
+  "usesPermissions": [],
+  "permissions": [],
+  "permissionTrees": [],
+  "permissionGroups": [],
+  "instrumentation": null,
+  "usesSdk": {
+    "minSdkVersion": 15,
+    "targetSdkVersion": 28
+  },
+  "usesConfiguration": null,
+  "usesFeatures": [],
+  "supportsScreens": null,
+  "compatibleScreens": [],
+  "supportsGlTextures": [],
+  "application": {
+    "theme": "resourceId:0x7f0f0006",
+    "label": "resourceId:0x7f0e002e",
+    "icon": "resourceId:0x7f0d0002",
+    "allowBackup": false,
+    "supportsRtl": true,
+    "appComponentFactory": "android.support.v4.app.CoreComponentFactory",
+    "activities": [
+      {
+        "theme": "resourceId:0x7f0f0008",
+        "label": "resourceId:0x7f0e002e",
+        "name": "de.jl.notificationlog.ui.AppListActivity",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.MAIN"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.LAUNCHER"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      },
+      {
+        "theme": "resourceId:0x7f0f0008",
+        "label": "resourceId:0x7f0e002e",
+        "name": "de.jl.notificationlog.ui.appdetail.AppDetailActivity",
+        "parentActivityName": "de.jl.notificationlog.ui.AppListActivity",
+        "intentFilters": [],
+        "metaData": [
+          {
+            "name": "android.support.PARENT_ACTIVITY",
+            "value": "de.jl.notificationlog.ui.AppListActivity"
+          }
+        ]
+      },
+      {
+        "theme": "resourceId:0x7f0f0008",
+        "label": "resourceId:0x7f0e004c",
+        "name": "de.jl.notificationlog.ui.about.AboutActivity",
+        "exported": false,
+        "intentFilters": [],
+        "metaData": []
+      }
+    ],
+    "activityAliases": [],
+    "launcherActivities": [
+      {
+        "theme": "resourceId:0x7f0f0008",
+        "label": "resourceId:0x7f0e002e",
+        "name": "de.jl.notificationlog.ui.AppListActivity",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.intent.action.MAIN"
+              }
+            ],
+            "categories": [
+              {
+                "name": "android.intent.category.LAUNCHER"
+              }
+            ],
+            "data": []
+          }
+        ],
+        "metaData": []
+      }
+    ],
+    "services": [
+      {
+        "name": "de.jl.notificationlog.service.AccessibilityService",
+        "permission": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+        "enabled": "resourceId:0x7f040003",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.accessibilityservice.AccessibilityService"
+              }
+            ],
+            "categories": [],
+            "data": []
+          }
+        ],
+        "metaData": [
+          {
+            "name": "android.accessibilityservice",
+            "resource": "resourceId:0x7f110000"
+          }
+        ]
+      },
+      {
+        "name": "de.jl.notificationlog.service.NotificationListenerService",
+        "permission": "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE",
+        "enabled": "resourceId:0x7f040004",
+        "intentFilters": [
+          {
+            "actions": [
+              {
+                "name": "android.service.notification.NotificationListenerService"
+              }
+            ],
+            "categories": [],
+            "data": []
+          }
+        ],
+        "metaData": []
+      }
+    ],
+    "receivers": [],
+    "providers": [
+      {
+        "name": "android.arch.lifecycle.ProcessLifecycleOwnerInitializer",
+        "exported": false,
+        "multiprocess": true,
+        "authorities": "de.jl.notificationlog.lifecycle-trojan",
+        "grantUriPermissions": [],
+        "metaData": [],
+        "pathPermissions": []
+      }
+    ],
+    "usesLibraries": []
+  }
+}
